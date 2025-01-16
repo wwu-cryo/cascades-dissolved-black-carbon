@@ -39,7 +39,9 @@ MATLAB, R, and offline [SNICAR-AD v3](https://github.com/mflanner/SNICARv3) (Fla
 - `src`- code used for DBC analysis, including:
   - `SNICAR`
     - `SNICAR_Template.xlsx` template spreadsheet to run the offline SNICAR model. See `Metadata` tab for more information and `Location` tabs for examples.
-    - `SNICAR_auto.m` code written by Anne Wilce to run the offline SNICAR model, uses the `SNICAR_Template.xlsx` as its input.
+    - `SNICAR_auto.m` code written by Anne Wilce to run the offline SNICAR model.
+      - input: `SNICAR_Template.xlsx` (or, for this project, `dbc-SNICAR-input.xlsx`)
+      - output: `dbc-SNICAR-output.xlsx`
   - `DBC_Analysis.R` code written by Sally Vaux for figures and statistics in the manuscript based on DBC concentrations, BPCA concentrations, proportions, and ratios, NAAPS deposition fluxes, SNICAR albedo, and river discharge data.
     - inputs: `dbc-data.csv`, `SNICAR-plotting-2022.csv`, `SNICAR-plotting-2023.csv`
   - `RadForce.m` code written by Anne Wilce to calculate IRF from spectral reflectance values.
