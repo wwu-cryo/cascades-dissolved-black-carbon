@@ -28,10 +28,15 @@ MATLAB, R, and offline [SNICAR-AD v3](https://github.com/mflanner/SNICARv3) (Fla
       - For more information about the SNICAR input variables, see the `SNICAR_Template.xlsx`.
     - `dbc-SNICAR-output.xlsx` output spreadsheet from the `SNICAR_auto.m` script below.
       - Each tab in the spreadsheet corresponds to an individual sample, and the final tab of the spreadsheet shows broadband albedo for each sample. Within each tab, column A indicates the wavelength interval (nm), column B shows the clean snow reflectance (based on the "default" column in the `dbc-SNICAR-input.xlsx` spreadsheet), and column C shows the BC in snow reflectance (based on column C from the `dbc-SNICAR-input.xlsx` spreadsheet).
-    - `SNICAR-plotting-2022.csv` used for R plotting of spectral reflectance.
-      - Within the .csv, the Wavelength column (A) is the SNICAR wavelength interval in nm, the Clean Snow column (B) is the averaged clean snow reflectance from each individual tab of the `dbc-SNICAR-output`, and the following columns are the BC in snow reflectance for each individual sample in 2022 from the `dbc-SNICAR-output.xlsx` spreadsheet.
-    - `SNICAR-plotting-2023.csv` used for R plotting of spectral reflectance.
-      - Within the .csv, the Wavelength column (A) is the SNICAR wavelength interval in nm, the Clean Snow column (B) is the averaged clean snow reflectance from each individual tab of the `dbc-SNICAR-output.xlsx`, and the following columns are the BC in snow reflectance for each individual sample in 2023 from the `dbc-SNICAR-output.xlsx` spreadsheet.
+    - `SNICAR-plotting.xlsx` used to create .csv files for plotting spectral reflectance data from SNICAR model runs of DBC concentrations.
+      - First tab of spreadsheet includes each column of clean snow reflectance from the 2022 SNICAR runs (see `dbc-SNICAR-output.xlsx`).
+      - Second tab of spreadsheet includes each column of clean snow reflectance from the 2023 SNICAR runs (see `dbc-SNICAR-output.xlsx`).
+      - Third tab of spreadsheet is the 2022 spectral reflectance data for plotting.
+        - The Wavelength column (A) is the SNICAR wavelength interval in nm, the Clean Snow column (B) is the averaged clean snow reflectance from the first tab of the spreadsheet, and the following columns are the BC in snow reflectance for each individual sample in 2022 from the `dbc-SNICAR-output.xlsx` spreadsheet.
+        - output: `SNICAR-plotting-2022.csv`
+      - Fourth tab of the spreadsheet is the 2023 spectral reflectance data for plotting.
+        - The Wavelength column (A) is the SNICAR wavelength interval in nm, the Clean Snow column (B) is the averaged clean snow reflectance from the second tab of the spreadsheet, and the following columns are the BC in snow reflectance for each individual sample in 2023 from the `dbc-SNICAR-output.xlsx` spreadsheet.
+      - output: `SNICAR-plotting-2023.csv`
       
   - `spectral-irradiance-data` .xlsx files matching each sampling date/location from the [PV Lighthouse Solar Spectrum Calculator](https://www2.pvlighthouse.com.au/calculators/solar%20spectrum%20calculator/solar%20spectrum%20calculator.aspx). These spectral irradiance data were used to calculate IRF at noon (i.e., the daily maximum) with the `RadForce.m` script.
     - Adjust the minimum wavelength in the "Options" tab to 205 nm to match the SNICAR minimum wavelength, enter the date, time, and coordinate information into the "Calculator" tab, download the .xlsx file, and copy the "Global to perpendicular plane (W/m<sup>2</sup>/nm)" column from the "Spectral irradiance tab" into the `dbc-IRF-input.xlsx` spreadsheet for each sample.  
