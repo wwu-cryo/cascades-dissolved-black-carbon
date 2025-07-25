@@ -18,7 +18,7 @@ MATLAB, R, and offline [SNICAR-AD v3](https://github.com/mflanner/SNICARv3) (Fla
       - Each tab corresponds to an individual sample. Within each tab, there are 5 important columns: A (wavelength interval in nm), B (clean snow reflectance), and C (BC in snow reflectance), all from the `dbc-SNICAR-output.xlsx` spreadsheet (samples are separated by tab), and E (wavelength interval in nm) and F (spectral irradiance, "global to perpendicular plane" in W/m<sup>2</sup>/nm from the PV Lighthouse Solar Spectrum Calculator as summarized below), both from the `spectral-irradiance-data` files for individual samples.
     - `dbc-irf-output.xlsx` IRF output in W/m<sup>2</sup> for each individual sample. 
   
-  - `naaps-data` Navy Aerosol Analysis and Prediction System reanalysis model precipitation data (.xlsx) and daily smoke deposition fluxes (.csv) for summers 2022 and 2023 on Mount Baker.
+  - `naaps-data` Navy Aerosol Analysis and Prediction System reanalysis model precipitation data (.csv), aerosol optical thickness (AOT) (.csv), and daily smoke deposition fluxes (.csv) for summers 2022 and 2023 on Mount Baker.
   
   - `nwac-snow-data` .csv files from the [Northwest Avalanche Center's](https://nwac.us/data-portal/) weather monitoring stations of snow depth on Mount Baker (Heather Meadows) and Mount Rainier (Paradise), from which snow depth was estimated to run the SNICAR model (see `dbc-SNICAR-input`).
     
